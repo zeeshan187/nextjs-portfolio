@@ -1,6 +1,6 @@
   "use client";
   // @flow strict
-  import { isValidEmail } from '@/utils/check-email.js';
+  import { isValidEmail } from '../../../../utils/check-email.js';
   import emailjs from '@emailjs/browser';
   import axios from 'axios';
   import { useState } from 'react';

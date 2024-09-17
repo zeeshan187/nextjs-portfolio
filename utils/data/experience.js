@@ -13,8 +13,8 @@ export const experiences = [
   },
   {
     id: 3,
-    title: "MERN Stack",
+    title: "MERN Stack Intern",
     company: "Alright Tech Pvt Lmtd.",
-    duration: "(Jan 2018 - Present)"
+    duration: "(June 2022 - Sep 2022)"
   }
 ]

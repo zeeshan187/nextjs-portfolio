@@ -79,7 +79,7 @@ function Navbar() {
               href="/blog"
             >
               <div onClick={()=>setIsOpen(false)} className="text-sm text-[#16f2b3] md:text-white transition-colors duration-300 hover:text-pink-600">
-                BLOGS
+                PORTFOLIO
               </div>
             </Link>
           </li>

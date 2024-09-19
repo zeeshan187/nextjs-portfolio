@@ -7,22 +7,25 @@
     background-color: white;
     height: 40vh;
     z-index: 99 !important;
-    position: relative;
+    /* position: relative; */
 }
 .footer_social_med{
     width: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 999999999999999999999 !important; 
 }
 .footer_icons{
-    border: 2px solid black;
     font-size: 60px;
     padding: 15px;
     cursor: pointer;
 }
 .footer_social_med a{
     color: black;
+}
+.footer_social_med a:hover{
+    scale: 2 !important;
 }
 .web_pages ul{
     display: flex;

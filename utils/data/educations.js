@@ -1,20 +1,20 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    title: "Bachelor in Software Engineering ",
+    duration: "2020 - 2024",
+    institution: "Arid University Rawalpindi, Pakistan",
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
+    title: "Fsc Pre Engineering",
     duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    institution: "Punjab Group of colleges Layyah Campus",
   },
   {
     id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    title: "Web Development Certification",
+    duration: "2020 - present",
+    institution: "Takes different web certification from different plateforms.",
   }
 ]

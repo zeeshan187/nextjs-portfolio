@@ -1,9 +1,72 @@
 // @flow strict
+"use client"
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import BlogCard from './blog-card';
+import { useState } from 'react';
+import project1 from '../../../../public/projects/project1.jpeg'
+import project2 from '../../../../public/projects/project2.jpeg'
+import project3 from '../../../../public/projects/project3.png'
+import project4 from '../../../../public/projects/project4.jpg'
+import project5 from '../../../../public/projects/project5.jpg'
+import project6 from '../../../../public/projects/project6.jpg'
+import project7 from '../../../../public/projects/project7.png'
+import project8 from '../../../../public/projects/project8.png'
 
-function Blog({ blogs }) {
+
+
+function Blog() {
+  const [blogs, setBlogs]=useState([
+    {
+      cover_image: project1,
+      url:"http://dochyve.com/",
+      description:"Dochyve is a platform that simplifies appointment scheduling between doctors and patients, ensuring seamless and convenient healthcare access.",
+      title:"DocHyve"
+    },
+    {
+      cover_image: project2,
+      url:"https://meshsq.com/",
+      description:"MeshSq is an IT company offering a range of services, including web development, software solutions, and IT consulting, tailored to meet diverse business needs.",
+      title:"MeshSq"
+    },
+    {
+      cover_image: project3,
+      url:"https://thepazone.com/",
+      description:"The PA Zone provides mentorship and guidance for aspiring and current PA students, supporting them through the application process and PA school success.",
+      title:"The PA Zone"
+    },
+    {
+      cover_image: project4,
+      url:"http://dochyve.com/",
+      description:"Dochyve is a platform that simplifies appointment scheduling between doctors and patients, ensuring seamless and convenient healthcare access.",
+      title:"DocHyve"
+    },
+    {
+      cover_image: project5,
+      url:"http://dochyve.com/",
+      description:"Dochyve is a platform that simplifies appointment scheduling between doctors and patients, ensuring seamless and convenient healthcare access.",
+      title:"DocHyve"
+    },
+    {
+      cover_image: project6,
+      url:"http://dochyve.com/",
+      description:"Dochyve is a platform that simplifies appointment scheduling between doctors and patients, ensuring seamless and convenient healthcare access.",
+      title:"DocHyve"
+    },
+    {
+      cover_image: project7,
+      url:"http://dochyve.com/",
+      description:"Dochyve is a platform that simplifies appointment scheduling between doctors and patients, ensuring seamless and convenient healthcare access.",
+      title:"DocHyve"
+    },
+    {
+      cover_image: project8,
+      url:"http://dochyve.com/",
+      description:"Dochyve is a platform that simplifies appointment scheduling between doctors and patients, ensuring seamless and convenient healthcare access.",
+      title:"DocHyve"
+    },
+
+  ])
 
   return (
     <div id='blogs' className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
@@ -19,7 +82,7 @@ function Blog({ blogs }) {
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Blogs
+            Portfolio
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
@@ -27,7 +90,7 @@ function Blog({ blogs }) {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 lg:gap-8 xl:gap-10">
         {
-          blogs.slice(0, 6).map((blog, i) => (
+          blogs.map((blog, i) => (
             blog?.cover_image &&
             <BlogCard blog={blog} key={i} />
           ))

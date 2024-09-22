@@ -7,8 +7,7 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
-       
-        <h5>© 2023 Copyright All Rights Reserved.<br />
+        <h5>© 2024 Copyright All Rights Reserved.<br />
           Created By <span>Malik Zeeshan</span></h5>
       </div>
     </>

@@ -5,8 +5,9 @@
     align-items: center;
     margin-top: 50px;
     background-color: white;
-    height: 40vh;
+    height: 30vh !important;
     z-index: 99 !important;
+    color: black !important;
     /* position: relative; */
 }
 .footer_social_med{
@@ -23,9 +24,11 @@
 }
 .footer_social_med a{
     color: black;
+
 }
 .footer_social_med a:hover{
-    scale: 2 !important;
+    scale: 1.2 !important;
+    transition-duration: 0.8s;
 }
 .web_pages ul{
     display: flex;
@@ -63,12 +66,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #363a47 !important;
+
+    
 }
 .footer_icons{
-    border: 2px solid black;
-    font-size: 60px;
-    padding: 15px;
+    font-size: 30px;
+    padding: 0px;
     cursor: pointer;
+    color: #EC4899 !important;
+
 }
 .footer_social_med a{
     color: black;

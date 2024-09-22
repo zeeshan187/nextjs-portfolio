@@ -9,7 +9,7 @@ import lottieFile from '/public/lottie/study.json';
 
 function Education() {
   return (
-    <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
+    <div id="education" className="relative z-50 border-t mb-12 lg:mb-24 mt-4 lg:mt-8 border-[#25213b]">
       <Image
         src="/section.svg"
         alt="Hero"

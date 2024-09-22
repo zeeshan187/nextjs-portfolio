@@ -4,20 +4,21 @@ import { personalData } from "../../../../utils/data/personal-data";
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillLinkedin } from "react-icons/ai";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaFacebook, FaFacebookF, FaInstagram, FaTwitter, FaTwitterSquare } from "react-icons/fa";
+import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import { FaTwitterSquare } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
+import { SiFiverr } from "react-icons/si";
+import { TbBrandFiverr } from "react-icons/tb";
+
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 function HeroSection() {
   return (
     <>
-      <div className="footer_social_med fixed bottom-3 left-[40%] text-red bg-white  p-2 rounded-md">
-        <a  href="https://www.facebook.com/zeeshan.zeeshanprince.94"><FaFacebookF className='footer_icons ' /></a>
-        <a  href="https://www.instagram.com/zeeshanshaniii185/"><FaInstagram className='footer_icons ' /></a>
-        <a  href="https://twitter.com/mzeeshi187"> <FaTwitter className='footer_icons ' /></a>
-        <a  href="https://www.linkedin.com/in/thezeeshantahir/"> <AiFillLinkedin className='footer_icons ' /></a>
-      </div>
+      
       <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
         <Image
           src="/hero.svg"
@@ -31,31 +32,47 @@ function HeroSection() {
           <div className="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
             <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
               Hello, <br />
-              This is {' '}
+              This is{" "}
               <span className=" text-pink-500">{personalData.name}</span>
               {` , I'm a Professional `}
-              <span className=" text-[#16f2b3]">{personalData.designation}</span>
+              <span className=" text-[#16f2b3]">
+                {personalData.designation}
+              </span>
               .
             </h1>
 
             <div className="my-12 flex items-center gap-5">
               <Link
                 href={personalData.github}
-                target='_blank'
+                target="_blank"
                 className="transition-all text-pink-500 hover:scale-125 duration-300"
               >
                 <BsGithub size={30} />
               </Link>
               <Link
+                href={personalData.whatsapp}
+                target="_blank"
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+                <IoLogoWhatsapp size={30} />
+              </Link>
+              <Link
+                href={personalData.fiverr}
+                target="_blank"
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+                <TbBrandFiverr size={30} />
+              </Link>
+              <Link
                 href={personalData.linkedIn}
-                target='_blank'
+                target="_blank"
                 className="transition-all text-pink-500 hover:scale-125 duration-300"
               >
                 <BsLinkedin size={30} />
               </Link>
               <Link
                 href={personalData.facebook}
-                target='_blank'
+                target="_blank"
                 className="transition-all text-pink-500 hover:scale-125 duration-300"
               >
                 <FaFacebook size={30} />
@@ -63,7 +80,7 @@ function HeroSection() {
 
               <Link
                 href={personalData.twitter}
-                target='_blank'
+                target="_blank"
                 className="transition-all text-pink-500 hover:scale-125 duration-300"
               >
                 <FaTwitterSquare size={30} />
@@ -71,20 +88,26 @@ function HeroSection() {
             </div>
 
             <div className="flex items-center gap-3">
-              <Link href="#contact" className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600">
+              <Link
+                href="/contact"
+                className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600"
+              >
                 <button className="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
                   <span>Contact me</span>
                   <RiContactsFill size={16} />
                 </button>
               </Link>
 
-              <a className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold" download="Zeeshan_Tahir_MERN_Stack Developer_2Years_Exp" type="button" href="/Zeeshan_Tahir_MERN_Stack_2YearsExp.pdf"
+              <a
+                className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
+                download="Zeeshan_Tahir_MERN_Stack Developer_2Years_Exp"
+                type="button"
+                href="/Zeeshan_Tahir_MERN_Stack_2YearsExp.pdf"
               >
                 <span>Get Resume</span>
                 <MdDownload size={16} />
               </a>
             </div>
-
           </div>
           <div className="order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37]">
             <div className="flex flex-row">
@@ -104,7 +127,7 @@ function HeroSection() {
                   <span className="mr-2 text-pink-500">const</span>
                   <span className="mr-2 text-white">coder</span>
                   <span className="mr-2 text-pink-500">=</span>
-                  <span className="text-gray-400">{'{'}</span>
+                  <span className="text-gray-400">{"{"}</span>
                 </div>
                 <div>
                   <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
@@ -145,27 +168,37 @@ function HeroSection() {
                   <span className="text-gray-400">{"'],"}</span>
                 </div>
                 <div>
-                  <span className="ml-4 lg:ml-8 mr-2 text-white">hardWorker:</span>
+                  <span className="ml-4 lg:ml-8 mr-2 text-white">
+                    hardWorker:
+                  </span>
                   <span className="text-orange-400">true</span>
                   <span className="text-gray-400">,</span>
                 </div>
                 <div>
-                  <span className="ml-4 lg:ml-8 mr-2 text-white">quickLearner:</span>
+                  <span className="ml-4 lg:ml-8 mr-2 text-white">
+                    quickLearner:
+                  </span>
                   <span className="text-orange-400">true</span>
                   <span className="text-gray-400">,</span>
                 </div>
                 <div>
-                  <span className="ml-4 lg:ml-8 mr-2 text-white">problemSolver:</span>
+                  <span className="ml-4 lg:ml-8 mr-2 text-white">
+                    problemSolver:
+                  </span>
                   <span className="text-orange-400">true</span>
                   <span className="text-gray-400">,</span>
                 </div>
                 <div>
-                  <span className="ml-4 lg:ml-8 mr-2 text-green-400">hireable:</span>
+                  <span className="ml-4 lg:ml-8 mr-2 text-green-400">
+                    hireable:
+                  </span>
                   <span className="text-orange-400">function</span>
-                  <span className="text-gray-400">{'() {'}</span>
+                  <span className="text-gray-400">{"() {"}</span>
                 </div>
                 <div>
-                  <span className="ml-8 lg:ml-16 mr-2 text-orange-400">return</span>
+                  <span className="ml-8 lg:ml-16 mr-2 text-orange-400">
+                    return
+                  </span>
                   <span className="text-gray-400">{`(`}</span>
                 </div>
                 <div>
@@ -184,18 +217,22 @@ function HeroSection() {
                   <span className="mr-2 text-amber-300">&gt;=</span>
                   <span className="text-orange-400">5</span>
                 </div>
-                <div><span className="ml-8 lg:ml-16 mr-2 text-gray-400">{`);`}</span></div>
-                <div><span className="ml-4 lg:ml-8 text-gray-400">{`};`}</span></div>
-                <div><span className="text-gray-400">{`};`}</span></div>
+                <div>
+                  <span className="ml-8 lg:ml-16 mr-2 text-gray-400">{`);`}</span>
+                </div>
+                <div>
+                  <span className="ml-4 lg:ml-8 text-gray-400">{`};`}</span>
+                </div>
+                <div>
+                  <span className="text-gray-400">{`};`}</span>
+                </div>
               </code>
             </div>
           </div>
         </div>
-
       </section>
     </>
-
   );
-};
+}
 
 export default HeroSection;

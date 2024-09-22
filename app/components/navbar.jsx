@@ -36,7 +36,7 @@ function Navbar() {
           <li>
             <Link
               className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/#about"
+              href="/about"
             >
               <div onClick={()=>setIsOpen(false)} className="text-sm text-[#16f2b3] md:text-white transition-colors duration-300 hover:text-pink-600">
                 ABOUT
@@ -46,7 +46,7 @@ function Navbar() {
           <li>
             <Link
               className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/#experience"
+              href="/experience"
             >
               <div onClick={()=>setIsOpen(false)} className="text-sm text-[#16f2b3] md:text-white transition-colors duration-300 hover:text-pink-600">
                 EXPERIENCE
@@ -56,7 +56,7 @@ function Navbar() {
           <li>
             <Link
               className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/#skills"
+              href="/skills"
             >
               <div onClick={()=>setIsOpen(false)} className="text-sm text-[#16f2b3] md:text-white transition-colors duration-300 hover:text-pink-600">
                 SKILLS
@@ -66,7 +66,7 @@ function Navbar() {
           <li>
             <Link
               className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/#education"
+              href="/education"
             >
               <div onClick={()=>setIsOpen(false)} className="text-sm text-[#16f2b3] md:text-white transition-colors duration-300 hover:text-pink-600">
                 EDUCATION
@@ -76,7 +76,7 @@ function Navbar() {
           <li>
             <Link
               className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/blog"
+              href="/portfolio"
             >
               <div onClick={()=>setIsOpen(false)} className="text-sm text-[#16f2b3] md:text-white transition-colors duration-300 hover:text-pink-600">
                 PORTFOLIO
@@ -86,7 +86,7 @@ function Navbar() {
           <li>
             <Link
               className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/#contact"
+              href="/contact"
             >
               <div onClick={()=>setIsOpen(false)} className="text-sm text-[#16f2b3] md:text-white transition-colors duration-300 hover:text-pink-600">
                 Contact

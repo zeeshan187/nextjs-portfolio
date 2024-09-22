@@ -11,5 +11,7 @@ export const personalData = {
   linkedIn: 'https://www.linkedin.com/in/thezeeshantahir/',
   twitter: 'https://twitter.com/mzeeshi187',
   stackOverflow: 'https://stackoverflow.com/users/19957004/m-zeeshan-tahir',
+  whatsapp:"https://wa.me/+923057567185",
+  fiverr:"https://fiverr.com/mrzeeshan185",
   devUsername: "",
 }

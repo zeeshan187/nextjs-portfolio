@@ -1,6 +1,6 @@
 {
   "name": "developer-portfolio",
-  "description": "Portfolio ofZeeshan Tahir",
+  "description": "Portfolio of Zeeshan Tahir",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,6 +20,7 @@
     "react-fast-marquee": "^1.6.2",
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^4.12.0",
+    "react-multi-carousel": "^2.8.5",
     "react-toastify": "^10.0.4"
   },
   "devDependencies": {

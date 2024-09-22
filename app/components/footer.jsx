@@ -14,12 +14,12 @@ const Footer = () => {
            <a href="https://www.linkedin.com/in/thezeeshantahir/"> <AiFillLinkedin className='footer_icons'/></a>
         </div>
         <div className="web_pages">
-            <ul>
+            <ul className='flex gap-1'> 
             <Link href="/"><li>Home</li></Link>
             <Link href="/#about"><li>About</li></Link>
             <Link href="/#experience"><li>Experience</li></Link>
-            <Link href="/#skills"><li>SKILLS</li></Link>
-            <Link href="/blogs"><li>BLOGS</li></Link>
+            <Link href="/#skills"><li>Skills</li></Link>
+            <Link href="/blogs"><li>Blogs</li></Link>
             <Link href="/contact"><li>Contact</li></Link>
             </ul>
         </div>

@@ -29,12 +29,14 @@ function HeroSection() {
   };
   return (
     <>
-      <div className="footer_social_med fixed bottom-3 left-0 right-0 mx-auto text-red bg-white  p-2 rounded-2xl">
-        <a  href="https://www.facebook.com/zeeshan.zeeshanprince.94"><FaFacebookF className='footer_icons ' /></a>
-        <a  href="https://www.instagram.com/zeeshanshaniii185/"><FaInstagram className='footer_icons ' /></a>
-        <a  href="https://twitter.com/mzeeshi187"> <FaTwitter className='footer_icons ' /></a>
-        <a  href="https://www.linkedin.com/in/thezeeshantahir/"> <AiFillLinkedin className='footer_icons ' /></a>
-      </div>
+       <Modal  open={isModalOpen} centered onOk={handleOk} onCancel={handleCancel} className="custom_modal_btn !w-[350px]">
+        <div className="flex flex-col gap-3 w-full">
+           <Link href="https://fiverr.com/mrzeeshan185" target="_blank"> <div className="bg-[#25d366] w-[95%] p-3 rounded-lg text-center text-white text-lg font-semibold">Fiverr</div></Link>
+           <Link href="https://wa.me/+923057567185" target="_blank"> <div  className="bg-[#1dbf73] w-[95%] p-3 rounded-lg text-center text-white text-lg font-semibold">WhatsApp</div></Link>
+           <Link href="/contact"><div  className="bg-[#229ed9] w-[95%] p-3 rounded-lg text-center text-white text-lg font-semibold">Contact Us</div>
+           </Link>
+        </div>
+      </Modal>
       <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
         <Image
           src="/hero.svg"

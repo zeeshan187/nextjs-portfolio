@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <ToastContainer />
-        <main className="min-h-[50vh] relative mx-auto px-6 sm:px-12 lg:max-w-[1500px]  text-white">
+        <main className="min-h-[50vh] relative mx-auto px-6 sm:px-12 lg:max-w-[1440px]  text-white">
           <Navbar />
           {children}
           <ScrollToTop />

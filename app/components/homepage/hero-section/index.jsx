@@ -29,16 +29,12 @@ function HeroSection() {
   };
   return (
     <>
-      <Modal
-        title="Basic Modal"
-        open={isModalOpen}
-        onOk={handleOk}
-        onCancel={handleCancel}
-        className="custom_modal_btn"
-        centered
-      >
-        
-      </Modal>
+      <div className="footer_social_med fixed bottom-3 left-0 right-0 mx-auto text-red bg-white  p-2 rounded-2xl">
+        <a  href="https://www.facebook.com/zeeshan.zeeshanprince.94"><FaFacebookF className='footer_icons ' /></a>
+        <a  href="https://www.instagram.com/zeeshanshaniii185/"><FaInstagram className='footer_icons ' /></a>
+        <a  href="https://twitter.com/mzeeshi187"> <FaTwitter className='footer_icons ' /></a>
+        <a  href="https://www.linkedin.com/in/thezeeshantahir/"> <AiFillLinkedin className='footer_icons ' /></a>
+      </div>
       <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
         <Image
           src="/hero.svg"

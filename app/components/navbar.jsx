@@ -11,8 +11,8 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-transparent">
-      <div className="flex items-center justify-between py-5">
+    <nav className="bg-transparent w-full">
+      <div className="flex items-center justify-between py-5 fixed top-0 w-full">
         <div className="flex flex-shrink-0 items-center">
           <Link href="/" className=" text-[#16f2b3] md:text-white text-3xl font-bold">
             <span className="text-pink-600">Zeeshan</span> <span className="text-white md:text-[#16f2b3]">Tahir</span>

@@ -12,7 +12,7 @@ import { RiContactsFill } from "react-icons/ri";
 function HeroSection() {
   return (
     <>
-      <div className="footer_social_med fixed bottom-3 left-[40%] text-red bg-white  p-2 rounded-md">
+      <div className="footer_social_med fixed bottom-3 left-0 right-0 mx-auto text-red bg-white  p-2 rounded-2xl">
         <a  href="https://www.facebook.com/zeeshan.zeeshanprince.94"><FaFacebookF className='footer_icons ' /></a>
         <a  href="https://www.instagram.com/zeeshanshaniii185/"><FaInstagram className='footer_icons ' /></a>
         <a  href="https://twitter.com/mzeeshi187"> <FaTwitter className='footer_icons ' /></a>
